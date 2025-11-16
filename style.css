@@ -153,6 +153,43 @@ body{
 .contact-section a{color:var(--brand);text-decoration:none;font-weight:700}
 .contact-note{background:#eef0ff;border-left:4px solid var(--brand);padding:12px;margin-top:12px;border-radius:16px}
 
+/* CV Download Button */
+.cv-download-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 24px;
+  border-radius:18px;
+  font-weight:700;
+  text-decoration:none;
+  font-size:1rem;
+
+  background:var(--brand);                 /* purple */
+  color:var(--accent-contrast);            /* white */
+  border:1px solid var(--brand-600);
+  box-shadow:0 10px 26px rgba(108,99,255,0.28);
+
+  transition:transform .15s ease,
+             box-shadow .15s ease,
+             background-color .15s ease,
+             border-color .15s ease;
+}
+
+.cv-download-btn:hover{
+  transform:translateY(-3px);
+  background:var(--brand-600);
+  border-color:var(--brand-700);
+  box-shadow:0 14px 34px rgba(108,99,255,0.33);
+}
+
+.cv-download-btn svg{
+  width:20px;
+  height:20px;
+  color:#fff;
+}
+.cv-download-btn svg *{ fill:currentColor }
+
 /* ===== Contact area: white pill buttons laid out in a responsive grid ===== */
 .contact-icons{
   display: grid;
